@@ -1,30 +1,38 @@
 \documentclass{article}
 
+\title{Linear Algebra}
+\author{Parth Mehrotra}
+
 \usepackage{amsmath}
 \usepackage{amssymb}
 
 \begin{document}
-	Vector: magnitude and direction
-	\begin{align*}
-			\vec{v} = (3, 4) = \begin{bmatrix} 3\\ 4 \end{bmatrix}
-	\end{align*}
-	$\mathbb{R}^2$. These are in "2" space. A 2-Tuple. 2-Dimensional.
-	Here is one in $\mathbb{R}^3$.
-	\begin{align*}
-			\vec{v} = (3, 4, 5) = \begin{bmatrix} 3\\ 4 \\5\end{bmatrix}
-	\end{align*}
-
-	Adding Vectors
-	\begin{align*}
-		\vec{a} = \begin{bmatrix} 6 \\ -2\end{bmatrix}
-		\vec{b} = \begin{bmatrix} -4 \\ 4\end{bmatrix}
-	\end{align*}
-
-	$\vec{a}, \vec{b} \in \mathbb{R}^2$ \\
-	Vectors a, and b are members of $\mathbb{R}^2$
-
-	$\vec{a} + \vec{b} = 
-		\begin{bmatrix} 6 + (-4) \\ -2 + 4\end{bmatrix} = 
-		\begin{bmatrix} 2 \\ 2 \end{bmatrix}$
+	\maketitle
+	\newpage
 	
+	\section{What are Vectors}
+	Vectors are data types that contain a magnitude and direction
+
+		\subsection{Notation}
+			Vectors can be notated several ways. \\
+			\[\vec{v} = (3, 4) = \begin{bmatrix} 3\\ 4 \end{bmatrix} = 3\hat{i} + 4\hat{j} \in \mathbb{R}^2 \]
+			\[\vec{w} = (3, 4, 5) = \begin{bmatrix} 3\\ 4\\ 5\end{bmatrix} = 3\hat{i} + 4\hat{j} + 5\hat{k} \in \mathbb{R}^3 \]
+			
+			$\vec{v}$ is a member of "2" space, a tuple, 2-Dimensional. It has two components. \\
+			$\vec{w}$ is a member of "3" space, a triple, 3-Dimensional. It has three components.
+		\subsection{Operations}
+
+			Adding Vectors
+			\begin{align*}
+				\vec{a} = \begin{bmatrix} 6 \\ -2\end{bmatrix}
+				\vec{b} = \begin{bmatrix} -4 \\ 4\end{bmatrix}
+			\end{align*}
+
+			$\vec{a}, \vec{b} \in \mathbb{R}^2$ \\
+			Vectors a, and b are members of $\mathbb{R}^2$
+
+			$\vec{a} + \vec{b} = 
+				\begin{bmatrix} 6 + (-4) \\ -2 + 4\end{bmatrix} = 
+				\begin{bmatrix} 2 \\ 2 \end{bmatrix}$
+		
 \end{document}
