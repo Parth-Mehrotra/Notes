@@ -1,6 +1,6 @@
 # WebRTC notes
 
-Protocol Built on top of SCTP.
+Protocol Built on top of `SCTP`.
 
 * Configurable
 
@@ -25,6 +25,18 @@ Okay so peers can find their addresses using `ICE`, but they need to find other 
 
 After signaling clients are ready to start exchanging packets directly. They’re required by WebRTC to complete a handshake known as the Session Description Protocol (`SDP`). This is where peers exchange infromation about their media capabilities.
 
+So the flow is roughly:
+
+1. Signalling
+2. ICE
+3. Exchange data
+
 This description is often wrapped in an `Offer` which is routed through the signaling server.
 
 The `Offer` is reponded too with an `Answer` which contains the responder's media capabilities.
+
+The peers will now get their public addresses via ICE, and exchange it via the signalling server. The response from `STUN` servers is known as `INCE Candidate` information. 
+
+At this point each client has the other's public IP information as well as media capabilities. They ping one another and the connection is established, they can now send information via Data Channels. 
+
+[For information on how you could setup client/server](http://blog.brkho.com/2017/03/15/dive-into-client-server-web-games-webrtc/)
