@@ -4,7 +4,7 @@ Protocol Built on top of SCTP.
 
 * Configurable
 
-- Unknown: So `SCTP` sits on layer 4, does that mean every router along the way needs to “support sctp”? - Routers operate at layer 3.
+~~Unknown: So `SCTP` sits on layer 4, does that mean every router along the way needs to “support sctp”?~~ Routers operate at layer 3.
 
 Allows realtime connections, and is written as a p2p protocol. Optimized for things like video chatting.
 
