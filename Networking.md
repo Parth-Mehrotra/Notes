@@ -67,3 +67,5 @@ The peers will now get their public addresses via ICE, and exchange it via the s
 At this point each client has the other's public IP information as well as media capabilities. They ping one another and the connection is established, they can now send information via Data Channels. 
 
 [For information on how you could setup client/server](http://blog.brkho.com/2017/03/15/dive-into-client-server-web-games-webrtc/)
+
+[TCP performs very poorly for games](https://gafferongames.com/post/udp_vs_tcp/) and unfortunately [UDP is not an option for browsers](https://gafferongames.com/post/why_cant_i_send_udp_packets_from_a_browser/). Games subsequently have to use WebRTC for realtime information.
